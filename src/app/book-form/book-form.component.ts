@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-book-form',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './book-form.component.css'
 })
 export class BookFormComponent {
-  affiche:boolean=false
+  @Input() affiche!:boolean
 }

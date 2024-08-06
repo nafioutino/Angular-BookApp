@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './book.component.css'
 })
 export class BookComponent {
-
+  recupValue(val:boolean){
+    console.log(val);
+    
+  }
 }

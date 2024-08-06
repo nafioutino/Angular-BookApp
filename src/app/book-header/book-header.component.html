@@ -1,13 +1,15 @@
-<nav>
-    <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
-    </ul>
-</nav>
+<header>
 
-
-
-<input type="text" placeholder="Ajoutez un livre">
-<button>Ajouter</button>
-
+    <a href="#"> <img [src]="logo" alt="logo"> </a>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div><button title="afficher le formulaire" class="btn" (click)="showForm()">{{!affiche?"Afficher le formulaire d'enregistrement":"Cacher le formulaire d'enregistrement "}} </button>    </div>
+   
+    
+</header>

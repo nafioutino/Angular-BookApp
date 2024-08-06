@@ -1,10 +1,16 @@
 table{
     border-collapse: collapse;
-    margin-top: 30px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+th{
+    background-color: rgb(64, 128, 224);
+    color: white;
 }
 
 th, td{
-    border:1px solid;
+    border:1px solid black;
     text-align: center;
     padding: 10px;
 }

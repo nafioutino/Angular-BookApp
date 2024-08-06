@@ -1,27 +1,24 @@
-
-
 <div class="container">
-    <h1>Book App</h1>
+
     <!-- Header -->
     <header>
-        <app-book-header></app-book-header>
+        <app-book-header (passValue)="recupValue($event)"></app-book-header>
     </header>
-    
-    
-    
+
+
+
     <!-- Main -->
     <main>
+
+        <app-book-form></app-book-form>
+
         <app-book-list></app-book-list>
     </main>
-    
-    
-    
+
+
+
     <!-- Footer -->
     <footer>
         <app-book-footer></app-book-footer>
     </footer>
 </div>
-
-
-
-

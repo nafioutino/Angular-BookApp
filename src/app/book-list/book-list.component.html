@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <th>Titre</th>
+        <th>Auteur</th>
+        <th>Statut</th>
+    </thead>
+
+    <tbody>
+        @for(book of books; track book.id){
+        <tr>
+            <td> {{book.title}} </td>
+            <td> {{book.author}}</td>
+            <td> {{book.statut}}</td>
+        </tr>
+        }
+
+    </tbody>
+</table>

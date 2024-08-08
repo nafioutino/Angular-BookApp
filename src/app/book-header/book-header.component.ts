@@ -6,7 +6,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './book-header.component.css'
 })
 export class BookHeaderComponent {
-  logo: string = "../../assets/golden-purple-fish.jpg";
+  logo: string = "assets/images/icon2.jpeg";
   @Output() passValue = new EventEmitter<boolean>()
   affiche: boolean = false;
 

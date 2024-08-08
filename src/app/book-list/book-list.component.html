@@ -1,11 +1,12 @@
 <main>
     <table>
         <thead>
-            <th>Titre</th>
-            <th>Auteur</th>
-            <th>Statut</th>
+            <tr>
+                <th>Titre</th>
+                <th>Auteur</th>
+                <th>Statut</th>
+            </tr>
         </thead>
-    
         <tbody>
             @for(book of books; track book.id){
             <tr>
@@ -14,8 +15,6 @@
                 <td> {{book.statut}}</td>
             </tr>
             }
-    
         </tbody>
-       
     </table>
 </main>

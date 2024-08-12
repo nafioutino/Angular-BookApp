@@ -1,0 +1,22 @@
+<h1>{{ titlePage }}</h1>
+
+<ul *ngIf="albums">
+  <li *ngFor="let album of albums">
+    <p>{{ album.ref }}</p>
+    <h4>{{ album.title }}</h4>
+    <p>{{ album.description }}</p>
+    <p *ngIf="album.tags">
+      <span *ngFor="let tag of album.tags">{{ tag }} </span>
+    </p>
+    <button>en</button>
+    <span *ngIf="album.like">🖤{{ album.like }} </span>
+    <span *ngIf="album.duration">🕐 {{ album.duration }} min</span>
+    <button (click)="onSelect(album)">Details</button>
+  </li>
+</ul>
+
+<div class="col-sm-4 video">
+  <!-- AlbumDetails communication parent vers enfant -->
+   <!-- onPlay méthode enfant et playParent méthode parent -->
+  <app-album-details [album]="selectedAlbum" [showDetails]="show"  (onPlay)="playParent($event)"></app-album-details>
+</div>

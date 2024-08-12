@@ -1,0 +1,7 @@
+<div classe="card" *ngIf="showDetails" class="container">
+    <h2> {{album.title}} </h2>
+    <p>Name: {{album.name}} </p>
+    <button (click)="play(album)">Play >></button>
+    <button (click)="hideAlbum()">Hide AlbumDetails</button>
+</div>
+
